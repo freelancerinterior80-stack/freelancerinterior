@@ -178,3 +178,25 @@ All colors MUST be HSL.
 .animate-pulse-glow {
   animation: pulse-glow 3s infinite ease-in-out;
 }
+
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow:
+      0 0 22px hsl(40 40% 63% / 0.38),
+      0 0 0 0 hsl(40 40% 63% / 0.34);
+  }
+  55% {
+    box-shadow:
+      0 0 30px hsl(40 40% 63% / 0.52),
+      0 0 0 10px hsl(40 40% 63% / 0.16);
+  }
+  100% {
+    box-shadow:
+      0 0 22px hsl(40 40% 63% / 0.38),
+      0 0 0 16px hsl(40 40% 63% / 0);
+  }
+}
+
+.whatsapp-pulse {
+  animation: whatsapp-pulse 3.2s infinite ease-out;
+}

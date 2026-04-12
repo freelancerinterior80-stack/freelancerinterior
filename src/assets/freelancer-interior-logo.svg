@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Freelancer Interior Logo</title>
+  <desc id="desc">Freelancer Interior brand mark</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 422V244l120 120V170l154 154" stroke="#555B5F" stroke-width="34"/>
+    <path d="M96 422h300V274l118-92 116 92v148" stroke="#363C40" stroke-width="34"/>
+    <path d="M188 422V310m170 112V310" stroke="#555B5F" stroke-width="24"/>
+    <path d="M490 422h144" stroke="#C5A15E" stroke-width="26"/>
+  </g>
+  <text x="715" y="306" fill="#D6AA5C" font-family="Poppins, Arial, sans-serif" font-size="104" font-weight="700" letter-spacing="6">
+    Freelancer
+  </text>
+  <text x="720" y="408" fill="#F2F2F2" font-family="Poppins, Arial, sans-serif" font-size="82" font-weight="500" letter-spacing="5">
+    Interior
+  </text>
+</svg>

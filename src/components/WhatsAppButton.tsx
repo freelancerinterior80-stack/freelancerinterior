@@ -26,7 +26,7 @@ const WhatsAppButton = () => {
         flex items-center justify-center
         hover:bg-[hsl(var(--gold-matte))]
         transition-all duration-300 ease-in-out
-        animate-fade-in animate-pulse-glow
+        animate-fade-in animate-pulse-glow whatsapp-pulse
         shadow-[0_0_25px_hsl(40_40%_63%_/_0.4)]
         z-[999999] pointer-events-auto
       "

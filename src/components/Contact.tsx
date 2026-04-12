@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, MessageCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -64,7 +64,8 @@ const Contact = () => {
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=1920"
-          alt="Modern Interior Space"
+          alt="Modern interior fitout consultation space in Kuwait"
+          loading="lazy"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -143,36 +144,33 @@ const Contact = () => {
             {/* === Location === */}
             <div className="text-center">
               <MapPin className="text-gold mx-auto mb-4" size={32} />
-              <h3 className="text-off-white font-playfair text-lg mb-2">
+              <h3 className="text-white font-bold font-playfair text-lg mb-2">
                 Location
               </h3>
-              <p className="text-white font-semibold text-sm font-inter leading-relaxed">
-                Office No: 20, Floor 2 <br />
-                Building No: 63, Block 6 <br />
-                Mubarakiya 15000 <br />
-                Kuwait City
+              <p className="text-white font-bold text-sm font-inter leading-relaxed">
+                Kuwait
               </p>
             </div>
 
             {/* === Phone === */}
             <div className="text-center">
-              <Phone className="text-gold mx-auto mb-4" size={32} />
-              <h3 className="text-off-white font-playfair text-lg mb-2">
+              <MessageCircle className="text-gold mx-auto mb-4" size={32} />
+              <h3 className="text-white font-bold font-playfair text-lg mb-2">
                 Phone
               </h3>
-              <p className="text-white font-semibold text-sm font-inter">
-                +965 41039976
+              <p className="text-white font-bold text-sm font-inter">
+                +965 50393979
               </p>
             </div>
 
             {/* === Email === */}
             <div className="text-center">
               <Mail className="text-gold mx-auto mb-4" size={32} />
-              <h3 className="text-off-white font-playfair text-lg mb-2">
+              <h3 className="text-white font-bold font-playfair text-lg mb-2">
                 Email
               </h3>
-              <p className="text-white font-semibold text-sm font-inter">
-                info@danaalbaharkw.com
+              <p className="text-white font-bold text-sm font-inter">
+                info@freelancerinterior.com
               </p>
             </div>
           </div>

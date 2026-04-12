@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="absolute inset-0 md:hidden z-0">
         <img
           src={heroBg}
-          alt="Hero Background"
+          alt="Luxury interior design in Kuwait hero background"
           className="w-full h-full object-cover brightness-[0.55]"
         />
         {/* Soft overlay for readability */}
@@ -48,7 +48,7 @@ const Hero = () => {
           >
             <img
               src={heroBg}
-              alt={`panel-${i}`}
+              alt={`Luxury interiors Kuwait hero panel ${i + 1}`}
               className="w-full h-full object-cover object-center"
               style={{ objectPosition: `${i * 33.3}% center` }}
             />

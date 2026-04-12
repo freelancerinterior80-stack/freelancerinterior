@@ -106,7 +106,8 @@ const Projects = () => {
                 <div className="relative h-[400px] sm:h-[500px] rounded-[2rem] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.4)]">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} luxury interior design project in ${project.location}, Kuwait`}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
                   {/* Gradient Overlay */}
@@ -147,7 +148,8 @@ const Projects = () => {
               <div className="relative h-[480px] rounded-[2rem] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.4)]">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={`${project.title} luxury interior design project in ${project.location}, Kuwait`}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
@@ -191,7 +193,8 @@ const Projects = () => {
 
             <motion.img
               src={selectedImage}
-              alt="Project detail"
+              alt="Luxury interior design project detail in Kuwait"
+              loading="lazy"
               className="max-w-full max-h-[90vh] object-contain rounded-[2rem] shadow-[0_10px_60px_rgba(197,161,94,0.2)]"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}

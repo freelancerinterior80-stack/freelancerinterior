@@ -14,7 +14,10 @@ const Gallery = () => {
       const numB = parseInt(b.match(/(\d+)/)?.[1] || "0", 10);
       return numA - numB;
     })
-    .map((key) => ({ src: (modules[key] as any).default }));
+    .map((key, index) => ({
+      src: (modules[key] as any).default,
+      alt: `Luxury interiors Kuwait portfolio project ${index + 1}`,
+    }));
 
   const [index, setIndex] = useState<number | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -87,7 +90,8 @@ const Gallery = () => {
             >
               <img
                 src={img.src}
-                alt={`Project ${i + 1}`}
+                alt={img.alt}
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 draggable={false}
               />

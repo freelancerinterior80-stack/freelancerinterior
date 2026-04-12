@@ -16,26 +16,18 @@ const Index = () => {
     <div className="min-h-screen flex flex-col bg-black text-white">
       <Header />
 
-      <section id="hero">
-        <Hero />
-      </section>
+      <Hero />
 
-      <section id="about">
-        <About />
-      </section>
+      <About />
 
-      <section id="services">
-        <Services />
-      </section>
+      <Services />
 
       {/* ✅ Add Clients Section Here */}
       <section id="clients">
         <Clients />
       </section>
 
-      <section id="projects">
-        <Projects />
-      </section>
+      <Projects />
 
       {/* Gallery Section */}
       <section id="gallery">
@@ -50,9 +42,7 @@ const Index = () => {
         <Testimonials />
       </section>
 
-      <section id="contact">
-        <Contact />
-      </section>
+      <Contact />
 
       <Footer />
       <WhatsAppButton />

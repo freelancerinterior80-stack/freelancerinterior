@@ -42,7 +42,8 @@ const HowItWorks = () => {
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1920"
-          alt="Interior workspace"
+          alt="3D visualization and interior design workspace in Kuwait"
+          loading="lazy"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/80 backdrop-blur-[1px]" />

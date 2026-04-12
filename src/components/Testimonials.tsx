@@ -10,7 +10,7 @@ const Testimonials = () => {
       role: "Villa Owner",
       location: "Salmiya",
       quote:
-        "Dana Al Bahar transformed our villa into a masterpiece. Their attention to detail and commitment to quality exceeded all expectations.",
+        "Freelancer Interior transformed our villa into a masterpiece. Their attention to detail and commitment to quality exceeded all expectations.",
     },
     {
       name: "Fatima Al-Sabah",
@@ -24,7 +24,7 @@ const Testimonials = () => {
       role: "Hotel Manager",
       location: "Fintas",
       quote:
-        "The craftsmanship is outstanding. Dana Al Bahar brought our hotel's interior vision to life with elegance and precision.",
+        "The craftsmanship is outstanding. Freelancer Interior brought our hotel's interior vision to life with elegance and precision.",
     },
   ];
 
@@ -61,7 +61,7 @@ const Testimonials = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           ></motion.div>
           <p className="text-gray-400 max-w-2xl mx-auto mt-6 text-base md:text-lg font-inter">
-            Hear from those who have experienced the <span className="text-[#C5A15E]/90">Dana Al Bahar</span> difference.
+            Hear from those who have experienced the <span className="text-[#C5A15E]/90">Freelancer Interior</span> difference.
           </p>
         </motion.div>
 

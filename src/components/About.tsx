@@ -17,7 +17,7 @@ const About = () => {
           <div className="lg:col-span-3 animate-fade-in">
             <img
               src={pro1}
-              alt="About Project 1"
+              alt="Luxury interior design in Kuwait by Freelancer Interior"
               loading="lazy"
               className="w-full h-[400px] md:h-[600px] object-cover rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
             />
@@ -42,15 +42,15 @@ const About = () => {
             >
               <img
                 src={pro2}
-                alt="About Project 2"
+                alt="Luxury bedroom interior design Kuwait"
                 loading="lazy"
                 className="w-full h-[300px] md:h-[400px] object-cover rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
               />
               <div className="absolute inset-0 bg-black/50 rounded-[2rem] flex items-center justify-center p-8">
                 <p className="text-gray-200 text-center text-[13px] sm:text-sm md:text-base font-inter leading-relaxed max-w-md">
-                  We are a Kuwait-based, full-service interior construction company
-                  specializing in precision craftsmanship, innovative design, and
-                  complete project delivery.
+                  Freelancer Interior is a Kuwait-based studio delivering Interior Design in Kuwait
+                  and Luxury Interiors Kuwait through precision craftsmanship, innovative design,
+                  and complete project delivery.
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ const About = () => {
             >
               <img
                 src={pro3}
-                alt="About Project 3"
+                alt="Premium fitout services Kuwait for modern living spaces"
                 loading="lazy"
                 className="w-full h-[250px] md:h-[350px] object-cover rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
               />
@@ -103,7 +103,7 @@ const About = () => {
             >
               <img
                 src={pro4}
-                alt="About Project 4"
+                alt="Renovation services Kuwait for elegant interior spaces"
                 loading="lazy"
                 className="w-full h-[300px] md:h-[400px] object-cover rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
               />
@@ -114,7 +114,7 @@ const About = () => {
             >
               <img
                 src={pro5}
-                alt="About Project 5"
+                alt="Custom luxury interiors Kuwait craftsmanship detail"
                 loading="lazy"
                 className="w-full h-[300px] md:h-[400px] object-cover rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
               />

@@ -10,10 +10,14 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
+            <img
+              src="/freelancerinteriorlogo.png"
+              alt="Freelancer Interior Logo"
+              loading="lazy"
+              className="h-16 mb-4 object-contain"
+            />
             <h3 className="text-xl font-light mb-4">
-              <span className="text-foreground">DANA AL BAHAR</span>
-              <br />
-              <span className="text-gold">CONSTRUCTION</span>
+              <span className="sr-only">Freelancer Interior</span>
             </h3>
             <p className="text-sm text-muted-foreground">
               The Comfort of Luxury since 2009
@@ -106,7 +110,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gold/20 pt-8 text-center text-sm text-muted-foreground">
           <p>
-            © {currentYear} Dana Al Bahar Construction Company. All rights reserved.
+            © {currentYear} Freelancer Interior. All rights reserved.
           </p>
         </div>
       </div>

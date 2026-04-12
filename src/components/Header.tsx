@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import danaLogo from "@/assets/danalogo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,12 +31,25 @@ const Header = () => {
       <div className="container mx-auto px-6 py-3 flex items-center justify-between">
         {/* === LOGO === */}
         <div className="flex items-center">
-          <img
-            src={danaLogo}
-            alt="Dana Al Bahar Logo"
-            className="h-[100px] md:h-[110px] lg:h-[120px] w-auto object-contain brightness-125 contrast-125 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] cursor-pointer"
+          <div
             onClick={() => scrollToSection("hero")}
-          />
+            className="cursor-pointer flex items-center gap-3"
+          >
+            <img
+              src="/freelancerinteriorlogo.png"
+              alt="Freelancer Interior Logo"
+              className="h-12 md:h-14 lg:h-16 w-auto object-contain brightness-110 contrast-110"
+            />
+            <div className="flex flex-col leading-tight">
+              <span className="text-[#C5A15E] font-semibold tracking-wide text-lg md:text-xl">
+                Freelancer
+              </span>
+              <span className="w-6 h-[2px] bg-[#C5A15E] mt-1"></span>
+              <span className="text-white text-sm md:text-base font-light tracking-wide">
+                Interior
+              </span>
+            </div>
+          </div>
         </div>
 
         {/* === DESKTOP NAV === */}
