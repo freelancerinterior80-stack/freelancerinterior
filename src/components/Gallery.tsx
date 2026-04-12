@@ -7,7 +7,10 @@ import "yet-another-react-lightbox/styles.css";
 import { ArrowRight } from "lucide-react";
 
 const Gallery = () => {
-  const modules = import.meta.glob("/src/assets/gallery/*.{jpg,jpeg,png}", { eager: true });
+  const modules = import.meta.glob<{ default: string }>(
+    "/src/assets/gallery/*.{jpg,jpeg,png}",
+    { eager: true }
+  );
   const images = Object.keys(modules)
     .sort((a, b) => {
       const numA = parseInt(a.match(/(\d+)/)?.[1] || "0", 10);
@@ -15,7 +18,7 @@ const Gallery = () => {
       return numA - numB;
     })
     .map((key, index) => ({
-      src: (modules[key] as any).default,
+      src: modules[key].default,
       alt: `Luxury interiors Kuwait portfolio project ${index + 1}`,
     }));
 
@@ -55,7 +58,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className="relative py-24 bg-[#0A0A0A] overflow-hidden">
+    <section className="relative py-28 bg-[#0A0A0A] overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
         {/* Header */}
         <motion.div
@@ -65,12 +68,12 @@ const Gallery = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] font-playfair font-extralight tracking-[0.2em] text-white uppercase">
+          <h2 className="text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] font-playfair font-light tracking-[0.2em] text-white uppercase">
             Our Portfolio Showcase
           </h2>
           <div className="h-[2px] w-24 bg-[#C5A15E] mx-auto mt-4 rounded-full" />
-          <p className="text-gray-400 mt-6 text-sm md:text-base max-w-2xl mx-auto font-inter">
-            Experience a glimpse into our signature interiors — where luxury meets craftsmanship.
+          <p className="text-gray-400 mt-6 text-sm md:text-base max-w-2xl mx-auto font-inter leading-relaxed">
+            Experience a glimpse into our signature Kuwait interiors, where luxury meets craftsmanship.
           </p>
         </motion.div>
 
@@ -85,14 +88,14 @@ const Gallery = () => {
             <motion.div
               key={i}
               onClick={() => setIndex(i % images.length)}
-              whileHover={{ scale: 1.03 }}
-              className="flex-shrink-0 w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[25vw] h-[400px] rounded-2xl overflow-hidden relative shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
+              whileHover={{ scale: 1.03, y: -4 }}
+              className="group flex-shrink-0 w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[25vw] h-[400px] rounded-lg overflow-hidden relative shadow-[0_12px_34px_rgba(0,0,0,0.32)] hover:shadow-[0_14px_34px_rgba(197,161,94,0.18)] transition-all duration-500 ease-out"
             >
               <img
                 src={img.src}
                 alt={img.alt}
                 loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                 draggable={false}
               />
               <div className="absolute inset-0 bg-black/30 opacity-0 hover:opacity-100 transition-all duration-500 flex items-center justify-center text-[#C5A15E] text-sm font-medium uppercase">
@@ -112,7 +115,7 @@ const Gallery = () => {
         >
           <button
             onClick={handleScrollToProjects}
-            className="flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-[#C5A15E] to-[#d4b97b] text-black font-medium uppercase tracking-wider rounded-full hover:opacity-90 transition-all duration-300 shadow-[0_4px_25px_rgba(197,161,94,0.3)]"
+            className="flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-[#C5A15E] to-[#d4b97b] text-black font-medium uppercase tracking-wider rounded-lg hover:scale-[1.03] hover:shadow-[0_12px_30px_rgba(197,161,94,0.24)] transition-all duration-300 ease-out shadow-[0_8px_22px_rgba(197,161,94,0.2)]"
           >
             View All Projects
             <ArrowRight size={20} />

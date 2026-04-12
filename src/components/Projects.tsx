@@ -24,42 +24,42 @@ const Projects = () => {
       image: project1,
       title: "Lannister Residence",
       subtitle:
-        "A modern sanctuary blending minimalist design with luxury finishes and natural light",
+        "A modern Residential Interior Kuwait sanctuary with luxury finishes and natural light",
       location: "Salmiya",
     },
     {
       image: project2,
       title: "Elysium Vista",
       subtitle:
-        "Contemporary living spaces featuring clean lines and sophisticated material palette",
+        "Contemporary Kuwait living spaces featuring clean lines and a sophisticated material palette",
       location: "Kuwait City",
     },
     {
       image: project3,
       title: "The Grand Maison",
       subtitle:
-        "Timeless elegance meets modern comfort in this meticulously crafted residence",
+        "Timeless elegance and modern comfort shaped for a meticulously crafted Kuwait residence",
       location: "Fintas",
     },
     {
       image: project4,
       title: "Serenity Villas",
       subtitle:
-        "Coastal-inspired interiors with an emphasis on calm, neutral tones and textures",
+        "Coastal-inspired Kuwait interiors with calm tones, crafted textures, and refined comfort",
       location: "Jabriya",
     },
     {
       image: project5,
       title: "Azure Estate",
       subtitle:
-        "Sophisticated urban dwelling with custom millwork and curated finishes",
+        "Sophisticated urban dwelling with custom millwork and curated interior finishes",
       location: "Shuwaikh",
     },
     {
       image: project6,
       title: "Vista Heights",
       subtitle:
-        "Modern residential masterpiece harmonizing form, light, and atmosphere",
+        "Modern residential masterpiece in Kuwait harmonizing form, light, and atmosphere",
       location: "Abu Halifa",
     },
   ];
@@ -75,7 +75,7 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] font-playfair font-extralight tracking-[0.15em] text-white uppercase leading-none">
+          <h2 className="text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] font-playfair font-light tracking-[0.15em] text-white uppercase leading-none">
             Our Projects
           </h2>
           <motion.div
@@ -87,7 +87,7 @@ const Projects = () => {
           ></motion.div>
         </motion.div>
 
-        {/* Mobile/Tablet → Horizontal Scroll */}
+        {/* Mobile/Tablet horizontal scroll */}
         <div className="block lg:hidden relative">
           <div className="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
             {projects.map((project, index) => (
@@ -98,17 +98,16 @@ const Projects = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: index * 0.1, type: "spring", stiffness: 150 }}
                 onClick={() => setSelectedImage(project.image)}
-                whileHover={{ scale: 1.03, y: -6 }}
-                transition={{ type: "spring", stiffness: 150 }}
+                whileHover={{ scale: 1.03, y: -4 }}
               >
-                <div className="relative h-[400px] sm:h-[500px] rounded-[2rem] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.4)]">
+                <div className="relative h-[400px] sm:h-[500px] rounded-lg overflow-hidden shadow-[0_12px_34px_rgba(0,0,0,0.32)] transition-all duration-500 group-hover:shadow-[0_14px_34px_rgba(197,161,94,0.18)]">
                   <img
                     src={project.image}
                     alt={`${project.title} luxury interior design project in ${project.location}, Kuwait`}
                     loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                   />
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
@@ -131,7 +130,7 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Desktop → Vertical Grid (fixes scroll issue) */}
+        {/* Desktop grid */}
         <div className="hidden lg:grid grid-cols-3 gap-10">
           {projects.map((project, index) => (
             <motion.div
@@ -142,15 +141,15 @@ const Projects = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               onClick={() => setSelectedImage(project.image)}
-              whileHover={{ scale: 1.02, y: -8 }}
+              whileHover={{ scale: 1.02, y: -4 }}
               className="group cursor-pointer"
             >
-              <div className="relative h-[480px] rounded-[2rem] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.4)]">
+              <div className="relative h-[480px] rounded-lg overflow-hidden shadow-[0_12px_34px_rgba(0,0,0,0.32)] transition-all duration-500 group-hover:shadow-[0_14px_34px_rgba(197,161,94,0.18)]">
                 <img
                   src={project.image}
                   alt={`${project.title} luxury interior design project in ${project.location}, Kuwait`}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
@@ -195,7 +194,7 @@ const Projects = () => {
               src={selectedImage}
               alt="Luxury interior design project detail in Kuwait"
               loading="lazy"
-              className="max-w-full max-h-[90vh] object-contain rounded-[2rem] shadow-[0_10px_60px_rgba(197,161,94,0.2)]"
+              className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-[0_12px_40px_rgba(197,161,94,0.18)]"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}

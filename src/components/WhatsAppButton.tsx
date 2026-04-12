@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = "96541039976"; // Kuwait number without +
     const message = encodeURIComponent(
-      "Hello, I'm interested in your interior fit-out services."
+      "Hello, I'm interested in your interior fit-out services in Kuwait."
     );
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
@@ -20,13 +20,14 @@ const WhatsAppButton = () => {
         bottom-5 right-5
         sm:bottom-6 sm:right-6
         w-12 h-12 sm:w-14 sm:h-14
-        rounded-full
+        rounded-lg
         bg-[hsl(var(--gold))]
         text-black
         flex items-center justify-center
         hover:bg-[hsl(var(--gold-matte))]
-        transition-all duration-300 ease-in-out
-        animate-fade-in animate-pulse-glow whatsapp-pulse
+        hover:scale-[1.03]
+        transition-all duration-300 ease-out
+        animate-fade-in whatsapp-pulse
         shadow-[0_0_25px_hsl(40_40%_63%_/_0.4)]
         z-[999999] pointer-events-auto
       "

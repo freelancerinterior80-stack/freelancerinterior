@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <img
               src="/freelancerinteriorlogo.png"
-              alt="Freelancer Interior Logo"
+              alt="Freelancer Interior Kuwait interior design company logo"
               loading="lazy"
               className="h-16 mb-4 object-contain"
             />
@@ -20,13 +20,13 @@ const Footer = () => {
               <span className="sr-only">Freelancer Interior</span>
             </h3>
             <p className="text-sm text-muted-foreground">
-              The Comfort of Luxury since 2009
+              Serving Kuwait since 2009 with premium interior design, fitout, and renovation.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-medium mb-4">Quick Links</h4>
+            <h4 className="font-medium mb-4 tracking-wide">Quick Links</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <a href="#about" className="hover-gold">
@@ -53,53 +53,50 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-medium mb-4">Services</h4>
+            <h4 className="font-medium mb-4 tracking-wide">Services</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Turnkey Interior Contracting</li>
+              <li>Interior Design Kuwait</li>
+              <li>Fitout Company Kuwait</li>
+              <li>Commercial Interior Kuwait</li>
+              <li>Residential Interior Kuwait</li>
               <li>Carpentry & Joinery</li>
-              <li>Gypsum Works</li>
-              <li>MEP Installation</li>
             </ul>
           </div>
 
           {/* Follow Us */}
           <div>
-            <h4 className="font-medium mb-4">Follow Us</h4>
+            <h4 className="font-medium mb-4 tracking-wide">Follow Us</h4>
             <div className="flex gap-4">
-              {/* Facebook */}
               <a
                 href="#"
                 aria-label="Facebook"
-                className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center hover:bg-gold hover:text-black transition-all hover-scale"
+                className="w-10 h-10 rounded-lg border border-gold/30 flex items-center justify-center hover:bg-gold hover:text-black transition-all duration-300 hover-scale"
               >
                 <Facebook size={18} />
               </a>
 
-              {/* Instagram */}
               <a
                 href="https://www.instagram.com/danaalbahar.kwt/"
                 aria-label="Instagram"
-                className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center hover:bg-gold hover:text-black transition-all hover-scale"
+                className="w-10 h-10 rounded-lg border border-gold/30 flex items-center justify-center hover:bg-gold hover:text-black transition-all duration-300 hover-scale"
               >
                 <Instagram size={18} />
               </a>
 
-              {/* WhatsApp */}
               <a
                 href="https://wa.me/96541039976"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
-                className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center hover:bg-gold hover:text-black transition-all hover-scale"
+                className="w-10 h-10 rounded-lg border border-gold/30 flex items-center justify-center hover:bg-gold hover:text-black transition-all duration-300 hover-scale"
               >
                 <FaWhatsapp size={18} />
               </a>
 
-              {/* TikTok */}
               <a
                 href="https://www.tiktok.com/@danaalbaharkwt?_t=ZS-90eAdqqPLrm&_r=1"
                 aria-label="TikTok"
-                className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center hover:bg-gold hover:text-black transition-all hover-scale"
+                className="w-10 h-10 rounded-lg border border-gold/30 flex items-center justify-center hover:bg-gold hover:text-black transition-all duration-300 hover-scale"
               >
                 <FaTiktok size={16} />
               </a>
@@ -107,10 +104,9 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom */}
         <div className="border-t border-gold/20 pt-8 text-center text-sm text-muted-foreground">
           <p>
-            © {currentYear} Freelancer Interior. All rights reserved.
+            (c) {currentYear} Freelancer Interior. All rights reserved.
           </p>
         </div>
       </div>

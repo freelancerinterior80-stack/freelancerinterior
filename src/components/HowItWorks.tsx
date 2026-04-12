@@ -9,25 +9,25 @@ const HowItWorks = () => {
       icon: Lightbulb,
       title: "Discovery & Brief",
       description:
-        "We explore your vision, goals, and space requirements to establish a clear creative direction.",
+        "We explore your Kuwait vision, goals, and space requirements to establish a clear creative direction.",
     },
     {
       icon: FileText,
       title: "Concept & Planning",
       description:
-        "Our designers craft comprehensive plans and architectural drawings tailored to your brief.",
+        "Our designers craft comprehensive interior plans and architectural drawings tailored to your brief.",
     },
     {
       icon: Box,
       title: "3D Modeling & Visualization",
       description:
-        "Experience your space before it's built through photorealistic 3D renderings and walkthroughs.",
+        "Experience your space before it is built through photorealistic 3D renderings and walkthroughs.",
     },
     {
       icon: Package,
       title: "Delivery & Review",
       description:
-        "Final inspection, walkthrough, and handover of your meticulously crafted interior space.",
+        "Final inspection, walkthrough, and handover of your meticulously crafted interior space in Kuwait.",
     },
   ];
 
@@ -46,7 +46,7 @@ const HowItWorks = () => {
           loading="lazy"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/80 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-black/80" />
       </div>
 
       {/* Section Content */}
@@ -59,7 +59,7 @@ const HowItWorks = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] font-playfair font-extralight tracking-[0.25em] text-white uppercase">
+          <h2 className="text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] font-playfair font-light tracking-[0.25em] text-white uppercase">
             How It Works
           </h2>
           <motion.div
@@ -96,9 +96,9 @@ const HowItWorks = () => {
 
                 {/* Step Icon */}
                 <motion.div
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.03 }}
                   transition={{ type: "spring", stiffness: 200 }}
-                  className="w-32 h-32 mb-8 rounded-full bg-[#C5A15E]/10 border border-[#C5A15E]/40 flex items-center justify-center shadow-[0_0_25px_rgba(197,161,94,0.1)] group-hover:shadow-[0_0_45px_rgba(197,161,94,0.25)] transition-all duration-500"
+                  className="w-32 h-32 mb-8 rounded-full bg-[#C5A15E]/10 border border-[#C5A15E]/40 flex items-center justify-center shadow-[0_10px_26px_rgba(0,0,0,0.26)] group-hover:shadow-[0_14px_34px_rgba(197,161,94,0.18)] transition-all duration-500 ease-out"
                 >
                   <Icon className="text-[#C5A15E]" size={42} strokeWidth={1.4} />
                 </motion.div>

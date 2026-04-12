@@ -24,7 +24,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-black/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.4)]"
+          ? "bg-black/95 backdrop-blur-sm shadow-[0_8px_24px_rgba(0,0,0,0.28)]"
           : "bg-black/90"
       }`}
     >
@@ -37,7 +37,7 @@ const Header = () => {
           >
             <img
               src="/freelancerinteriorlogo.png"
-              alt="Freelancer Interior Logo"
+              alt="Freelancer Interior Kuwait interior design company logo"
               className="h-12 md:h-14 lg:h-16 w-auto object-contain brightness-110 contrast-110"
             />
             <div className="flex flex-col leading-tight">
@@ -63,14 +63,14 @@ const Header = () => {
             <button
               key={link.name}
               onClick={() => scrollToSection(link.target)}
-              className="text-sm uppercase tracking-[0.25em] text-gray-200 hover:text-[#C5A15E] transition-all font-inter"
+              className="text-sm uppercase tracking-[0.25em] text-gray-200 hover:text-[#C5A15E] transition-all duration-300 ease-out font-inter"
             >
               {link.name}
             </button>
           ))}
 
           <Button
-            className="rounded-full bg-white hover:bg-gray-100 text-black font-medium tracking-wider text-sm px-8 py-3 transition-all shadow-md"
+            className="rounded-lg bg-white hover:bg-[#C5A15E] text-black font-medium tracking-wider text-sm px-8 py-3 transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-[0_12px_30px_rgba(197,161,94,0.24)] shadow-[0_8px_18px_rgba(0,0,0,0.22)]"
             onClick={() => scrollToSection("contact")}
           >
             Get Free Consultation
@@ -79,8 +79,9 @@ const Header = () => {
 
         {/* === MOBILE MENU BUTTON === */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-white transition-colors duration-300 hover:text-[#C5A15E]"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle navigation menu"
         >
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -88,7 +89,7 @@ const Header = () => {
 
       {/* === MOBILE MENU === */}
       {isMenuOpen && (
-        <div className="md:hidden bg-black/95 backdrop-blur-lg border-t border-[#C5A15E]/20 animate-fade-in">
+        <div className="md:hidden bg-black/95 backdrop-blur-sm border-t border-[#C5A15E]/20 animate-fade-in">
           <nav className="container mx-auto py-8 flex flex-col gap-6 text-center">
             {[
               { name: "About", target: "about" },
@@ -99,14 +100,14 @@ const Header = () => {
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.target)}
-                className="uppercase tracking-[0.25em] text-gray-300 hover:text-[#C5A15E] font-inter text-sm"
+                className="uppercase tracking-[0.25em] text-gray-300 hover:text-[#C5A15E] font-inter text-sm transition-colors duration-300"
               >
                 {link.name}
               </button>
             ))}
 
             <Button
-              className="bg-white hover:bg-gray-100 text-black font-medium tracking-wider text-sm px-6 py-2 rounded-full"
+              className="bg-white hover:bg-[#C5A15E] text-black font-medium tracking-wider text-sm px-6 py-2 rounded-lg transition-all duration-300 hover:scale-[1.03]"
               onClick={() => scrollToSection("contact")}
             >
               Get Free Consultation

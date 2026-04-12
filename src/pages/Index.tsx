@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import Clients from "@/components/Clients"; // ✅ Add this
+import Clients from "@/components/Clients";
 import Projects from "@/components/Projects";
 import Gallery from "@/components/Gallery";
 import HowItWorks from "@/components/HowItWorks";
@@ -22,7 +22,7 @@ const Index = () => {
 
       <Services />
 
-      {/* ✅ Add Clients Section Here */}
+      {/* Clients Section */}
       <section id="clients">
         <Clients />
       </section>

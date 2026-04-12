@@ -37,7 +37,7 @@ All colors MUST be HSL.
     --input: 0 0% 12%;
     --ring: 40 40% 63%;
 
-    --radius: 1.5rem;
+    --radius: 0.5rem;
 
     /* Premium brand colors - Deep champagne gold */
     --gold: 40 40% 63%;
@@ -53,12 +53,12 @@ All colors MUST be HSL.
     --gradient-gold-glow: linear-gradient(135deg, hsl(40 40% 63% / 0.2) 0%, hsl(38 42% 66% / 0.1) 100%);
     
     /* Shadows */
-    --shadow-elegant: 0 20px 60px -15px hsl(0 0% 0% / 0.5);
-    --shadow-card: 0 8px 30px hsl(0 0% 0% / 0.4);
-    --shadow-gold-glow: 0 8px 32px hsl(40 40% 63% / 0.3);
+    --shadow-elegant: 0 16px 42px -18px hsl(0 0% 0% / 0.55);
+    --shadow-card: 0 10px 26px hsl(0 0% 0% / 0.28);
+    --shadow-gold-glow: 0 12px 30px hsl(40 40% 63% / 0.22);
     
     /* Transitions */
-    --transition-smooth: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -72,6 +72,7 @@ All colors MUST be HSL.
     @apply bg-background text-foreground font-['Inter',sans-serif];
     scroll-behavior: smooth;
     background: linear-gradient(180deg, hsl(0 0% 6%) 0%, hsl(0 0% 8%) 50%, hsl(0 0% 6%) 100%);
+    text-rendering: optimizeLegibility;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -79,7 +80,7 @@ All colors MUST be HSL.
   }
   
   p {
-    @apply font-['Inter',sans-serif] font-normal;
+    @apply font-['Inter',sans-serif] font-normal leading-relaxed;
   }
 }
 
@@ -137,11 +138,11 @@ All colors MUST be HSL.
   }
   
   .hover-scale {
-    @apply transition-smooth hover:scale-[1.05];
+    @apply transition-smooth hover:scale-[1.03];
   }
   
   .hover-lift {
-    @apply transition-smooth hover:-translate-y-2;
+    @apply transition-smooth hover:-translate-y-1;
   }
   
   .hover-gold {
@@ -153,7 +154,7 @@ All colors MUST be HSL.
   }
   
   .rounded-atmo {
-    border-radius: 2rem;
+    border-radius: var(--radius);
   }
   
   .gold-divider {

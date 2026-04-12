@@ -36,7 +36,7 @@ const Hero = () => {
         ].map((panel, i) => (
           <div
             key={i}
-            className="relative w-[21%] overflow-hidden shadow-[0_10px_50px_rgba(0,0,0,0.4)] flex-shrink-0"
+            className="relative w-[21%] overflow-hidden shadow-[0_12px_34px_rgba(0,0,0,0.32)] flex-shrink-0"
             style={{
               alignSelf: "flex-start",
               height: panel.height,
@@ -76,11 +76,11 @@ const Hero = () => {
       <div className="absolute left-[10%] md:left-[14.5%] bottom-[10%] md:bottom-[5%] z-20 max-w-4xl px-6">
         <div className="text-white text-left">
           <p className="text-[#C5A15E] uppercase tracking-[0.35em] text-[10px] mb-2 md:mb-3">
-            Since 2009
+            Serving Kuwait since 2009
           </p>
 
           {/* === Updated Text === */}
-          <h1 className="text-[1.5rem] sm:text-[2.3rem] md:text-[3.1rem] lg:text-[4rem] xl:text-[4.6rem] leading-[1.05] font-light tracking-tight mb-12">
+          <h1 className="text-[1.5rem] sm:text-[2.3rem] md:text-[3.1rem] lg:text-[4rem] xl:text-[4.6rem] leading-[1.08] font-light tracking-[0.03em] mb-12">
             <span className="text-white">TRANSFORMING</span>{" "}
             <span className="text-[#C5A15E]">SPACES</span>{" "}
             <span className="text-white block md:inline">
@@ -92,9 +92,9 @@ const Hero = () => {
           <div className="flex justify-start md:justify-end pr-[10%] mt-10">
             <button
               onClick={() => scrollToSection("contact")}
-              className="bg-white text-black px-8 sm:px-10 py-3 rounded-full font-medium text-sm sm:text-base tracking-wider flex items-center gap-2 hover:bg-gray-100 transition-all duration-300"
+              className="bg-white text-black px-8 sm:px-10 py-3 rounded-lg font-medium text-sm sm:text-base tracking-wider flex items-center gap-2 hover:bg-[#C5A15E] hover:scale-[1.03] hover:shadow-[0_12px_30px_rgba(197,161,94,0.24)] transition-all duration-300 ease-out"
             >
-              Request a Quote
+              Book a Kuwait Consultation
               <ArrowRight size={20} />
             </button>
           </div>

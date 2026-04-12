@@ -82,12 +82,13 @@ const Contact = () => {
               in Mind?
             </h2>
             <p className="text-off-white/80 text-lg font-inter max-w-2xl mx-auto leading-relaxed">
-              Tell us about your project, and we'll prepare a customized proposal with timelines and pricing.
+              Tell us about your Kuwait project, and we'll prepare a refined proposal for interior design,
+              fitout, renovation, or 3D visualization with clear timelines and pricing.
             </p>
           </div>
 
           {/* === Form Card === */}
-          <div className="bg-off-white rounded-[2rem] p-8 md:p-12 shadow-elegant animate-fade-in max-w-4xl mx-auto">
+          <div className="bg-off-white rounded-lg p-8 md:p-12 shadow-elegant animate-fade-in max-w-4xl mx-auto transition-all duration-500 hover:shadow-[0_14px_34px_rgba(197,161,94,0.18)]">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input
@@ -96,7 +97,7 @@ const Contact = () => {
                   placeholder="Your Name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="bg-white border-marble-dark/20 text-charcoal placeholder:text-charcoal/50 rounded-xl h-14 font-inter"
+                  className="bg-white border-marble-dark/20 text-charcoal placeholder:text-charcoal/50 rounded-lg h-14 font-inter"
                   required
                 />
                 <Input
@@ -105,7 +106,7 @@ const Contact = () => {
                   placeholder="Email Address"
                   value={formData.email}
                   onChange={handleChange}
-                  className="bg-white border-marble-dark/20 text-charcoal placeholder:text-charcoal/50 rounded-xl h-14 font-inter"
+                  className="bg-white border-marble-dark/20 text-charcoal placeholder:text-charcoal/50 rounded-lg h-14 font-inter"
                   required
                 />
               </div>
@@ -116,7 +117,7 @@ const Contact = () => {
                 placeholder="Phone Number"
                 value={formData.phone}
                 onChange={handleChange}
-                className="bg-white border-marble-dark/20 text-charcoal placeholder:text-charcoal/50 rounded-xl h-14 font-inter"
+                className="bg-white border-marble-dark/20 text-charcoal placeholder:text-charcoal/50 rounded-lg h-14 font-inter"
                 required
               />
 
@@ -125,14 +126,14 @@ const Contact = () => {
                 placeholder="Tell us about your project..."
                 value={formData.message}
                 onChange={handleChange}
-                className="bg-white border-marble-dark/20 text-charcoal placeholder:text-charcoal/50 rounded-xl min-h-[160px] font-inter resize-none"
+                className="bg-white border-marble-dark/20 text-charcoal placeholder:text-charcoal/50 rounded-lg min-h-[160px] font-inter resize-none"
                 required
               />
 
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full md:w-auto bg-gold hover:bg-gold-matte text-black font-poppins font-medium px-12 py-6 text-base rounded-full uppercase tracking-wider transition-all disabled:opacity-50"
+                className="w-full md:w-auto bg-gold hover:bg-gold-matte text-black font-poppins font-medium px-12 py-6 text-base rounded-lg uppercase tracking-wider transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-[0_12px_30px_rgba(197,161,94,0.24)] disabled:opacity-50"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
@@ -144,10 +145,10 @@ const Contact = () => {
             {/* === Location === */}
             <div className="text-center">
               <MapPin className="text-gold mx-auto mb-4" size={32} />
-              <h3 className="text-white font-bold font-playfair text-lg mb-2">
+              <h3 className="text-white font-semibold font-playfair text-lg mb-2 tracking-wide">
                 Location
               </h3>
-              <p className="text-white font-bold text-sm font-inter leading-relaxed">
+              <p className="text-white/90 font-medium text-sm font-inter leading-relaxed">
                 Kuwait
               </p>
             </div>
@@ -155,10 +156,10 @@ const Contact = () => {
             {/* === Phone === */}
             <div className="text-center">
               <MessageCircle className="text-gold mx-auto mb-4" size={32} />
-              <h3 className="text-white font-bold font-playfair text-lg mb-2">
+              <h3 className="text-white font-semibold font-playfair text-lg mb-2 tracking-wide">
                 Phone
               </h3>
-              <p className="text-white font-bold text-sm font-inter">
+              <p className="text-white/90 font-medium text-sm font-inter">
                 +965 50393979
               </p>
             </div>
@@ -166,10 +167,10 @@ const Contact = () => {
             {/* === Email === */}
             <div className="text-center">
               <Mail className="text-gold mx-auto mb-4" size={32} />
-              <h3 className="text-white font-bold font-playfair text-lg mb-2">
+              <h3 className="text-white font-semibold font-playfair text-lg mb-2 tracking-wide">
                 Email
               </h3>
-              <p className="text-white font-bold text-sm font-inter">
+              <p className="text-white/90 font-medium text-sm font-inter">
                 info@freelancerinterior.com
               </p>
             </div>

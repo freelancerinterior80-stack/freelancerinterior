@@ -21,8 +21,8 @@ const Clients = () => {
 
       <div className="relative z-10 container mx-auto px-6 text-center">
         {/* Section Title */}
-        <h2 className="text-[2.2rem] sm:text-[3rem] md:text-[3.8rem] font-playfair font-extralight tracking-[0.2em] text-white uppercase mb-10">
-          Trusted by <span className="text-[#C5A15E]">Leading Brands</span>
+        <h2 className="text-[2.2rem] sm:text-[3rem] md:text-[3.8rem] font-playfair font-light tracking-[0.2em] text-white uppercase mb-10">
+          Trusted by <span className="text-[#C5A15E]">Leading Brands in Kuwait</span>
         </h2>
 
         {/* --- Row 1 (Left to Right) --- */}

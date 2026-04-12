@@ -19,7 +19,7 @@ const About = () => {
               src={pro1}
               alt="Luxury interior design in Kuwait by Freelancer Interior"
               loading="lazy"
-              className="w-full h-[400px] md:h-[600px] object-cover rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
+              className="w-full h-[400px] md:h-[600px] object-cover rounded-lg shadow-[0_12px_34px_rgba(0,0,0,0.32)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(197,161,94,0.16)]"
             />
           </div>
 
@@ -30,7 +30,7 @@ const About = () => {
               className="text-center opacity-90 animate-fade-in"
               style={{ animationDelay: "0.1s" }}
             >
-              <h2 className="text-6xl md:text-8xl lg:text-9xl font-playfair font-extralight tracking-[0.2em] text-white mb-8">
+              <h2 className="text-6xl md:text-8xl lg:text-9xl font-playfair font-light tracking-[0.2em] text-white mb-8">
                 WHO
               </h2>
             </div>
@@ -44,13 +44,13 @@ const About = () => {
                 src={pro2}
                 alt="Luxury bedroom interior design Kuwait"
                 loading="lazy"
-                className="w-full h-[300px] md:h-[400px] object-cover rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
+                className="w-full h-[300px] md:h-[400px] object-cover rounded-lg shadow-[0_12px_34px_rgba(0,0,0,0.32)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(197,161,94,0.16)]"
               />
-              <div className="absolute inset-0 bg-black/50 rounded-[2rem] flex items-center justify-center p-8">
+              <div className="absolute inset-0 bg-black/50 rounded-lg flex items-center justify-center p-8">
                 <p className="text-gray-200 text-center text-[13px] sm:text-sm md:text-base font-inter leading-relaxed max-w-md">
-                  Freelancer Interior is a Kuwait-based studio delivering Interior Design in Kuwait
-                  and Luxury Interiors Kuwait through precision craftsmanship, innovative design,
-                  and complete project delivery.
+                  Freelancer Interior is a Kuwait-based studio delivering Interior Design Kuwait,
+                  Fitout Company Kuwait expertise, and Residential Interior Kuwait projects through
+                  precision craftsmanship and complete project delivery.
                 </p>
               </div>
             </div>
@@ -60,7 +60,7 @@ const About = () => {
               className="text-center opacity-90 animate-fade-in"
               style={{ animationDelay: "0.3s" }}
             >
-              <h2 className="text-6xl md:text-8xl lg:text-9xl font-playfair font-extralight tracking-[0.2em] text-white">
+              <h2 className="text-6xl md:text-8xl lg:text-9xl font-playfair font-light tracking-[0.2em] text-white">
                 ARE
               </h2>
             </div>
@@ -74,12 +74,12 @@ const About = () => {
                 src={pro3}
                 alt="Premium fitout services Kuwait for modern living spaces"
                 loading="lazy"
-                className="w-full h-[250px] md:h-[350px] object-cover rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
+                className="w-full h-[250px] md:h-[350px] object-cover rounded-lg shadow-[0_12px_34px_rgba(0,0,0,0.32)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(197,161,94,0.16)]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-[2rem] flex items-end p-6 md:p-8">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-lg flex items-end p-6 md:p-8">
                 <p className="text-gray-200 text-[13px] sm:text-sm md:text-base leading-relaxed">
-                  With over 15 years of experience, 200+ skilled professionals, and
-                  2,000 sqm of dedicated facilities, we transform visions into reality.
+                  Serving Kuwait since 2009, our 200+ skilled professionals and
+                  2,000 sqm of dedicated facilities turn ambitious visions into refined interiors.
                 </p>
               </div>
             </div>
@@ -89,7 +89,7 @@ const About = () => {
               className="text-center opacity-90 animate-fade-in"
               style={{ animationDelay: "0.5s" }}
             >
-              <h2 className="text-6xl md:text-8xl lg:text-9xl font-playfair font-extralight tracking-[0.2em] text-white">
+              <h2 className="text-6xl md:text-8xl lg:text-9xl font-playfair font-light tracking-[0.2em] text-white">
                 WE
               </h2>
             </div>
@@ -105,7 +105,7 @@ const About = () => {
                 src={pro4}
                 alt="Renovation services Kuwait for elegant interior spaces"
                 loading="lazy"
-                className="w-full h-[300px] md:h-[400px] object-cover rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
+                className="w-full h-[300px] md:h-[400px] object-cover rounded-lg shadow-[0_12px_34px_rgba(0,0,0,0.32)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(197,161,94,0.16)]"
               />
             </div>
             <div
@@ -116,7 +116,7 @@ const About = () => {
                 src={pro5}
                 alt="Custom luxury interiors Kuwait craftsmanship detail"
                 loading="lazy"
-                className="w-full h-[300px] md:h-[400px] object-cover rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
+                className="w-full h-[300px] md:h-[400px] object-cover rounded-lg shadow-[0_12px_34px_rgba(0,0,0,0.32)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(197,161,94,0.16)]"
               />
             </div>
           </div>
