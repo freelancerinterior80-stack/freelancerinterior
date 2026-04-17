@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "96541039976"; // Kuwait number without +
+    const phoneNumber = "96550393979"; // Kuwait number without +
     const message = encodeURIComponent(
       "Hello, I'm interested in your interior fit-out services in Kuwait."
     );
